@@ -28,5 +28,5 @@ int Pow (int a, int b)
 
 int num1 = ReadData("Введите число A: ");
 int num2 = ReadData("Введите число B: ");
-Pow(num1, num2);
-PrintData("Число A возведененное в степень B равно: " + Pow(num1, num2));
+int res = Pow(num1, num2);
+PrintData("Число A возведененное в степень B равно: " + res);
