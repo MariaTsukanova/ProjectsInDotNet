@@ -2,19 +2,19 @@
 
 double min = double.MaxValue;
 double max = double.MaxValue;
-double[] array = GenArray(5, 10, 100);
+double[] array = GenArray(5, 6, 15);
 Print1DArr(array);
 MinMax(array);
 PrintData("Разница между максимальным и минимальным элементом массива равна " + (max-min));
 
 
 //Генерируем массив 
-double[] GenArray(int len, double minValue, double maxValue)
+double[] GenArray(int len, int minValue, int maxValue)
 {
     double[] arr = new double[len];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = Convert.ToDouble(new Random().Next(minValue, maxValue + 1));
+        arr[i] = new Random().Next(minValue, maxValue + 1);
     }
     return arr;
 }
