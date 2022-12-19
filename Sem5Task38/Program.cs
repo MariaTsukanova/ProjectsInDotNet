@@ -1,7 +1,7 @@
 ﻿// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива
 
 double min = double.MaxValue;
-double max = double.MaxValue;
+double max = double.MinValue;
 double[] array = GenArray(5, 6, 15);
 Print1DArr(array);
 MinMax(array);
@@ -14,7 +14,7 @@ double[] GenArray(int len, int minValue, int maxValue)
     double[] arr = new double[len];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(minValue, maxValue + 1);
+        arr[i] = (new Random().Next(minValue, maxValue + 1))+(new Random().NextDouble());
     }
     return arr;
 }
