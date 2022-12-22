@@ -1,7 +1,6 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
 int number = ReadData("Введите количество чисел: ");
-//Console.WriteLine("Последовательно вводите числа и нажимайте Enter");
 int countPositivNum = CountPositivNum(number);
 PrintData("Количество чисел больше нуля: " + countPositivNum);
 
