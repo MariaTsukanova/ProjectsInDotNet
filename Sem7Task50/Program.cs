@@ -5,20 +5,11 @@ int row = ReadData("Введите количество строк ");
 int column = ReadData("Введите количество столбцов ");
 int x = ReadData("Введите индекс строки: ");
 int y = ReadData("Введите индекс столбца: ");
-int[,] arr2D = Fill2DArray(row, column, 1, 16);
+int[,] arr2D = Fill2DArray(row, column, 1, 50);
 Print2DArrayColor(arr2D);
 int element = SearchElement(arr2D, x, y);
-
-
-if (element == -1)
-{
-    PrintData("Нет элемента массива с указанными индексами");
-}
-
-else
-{
-    PrintData("Заданным индексам элемента массива соответствует значение: " + element);
-}
+if (element == -1) PrintData("Нет элемента массива с указанными индексами");
+else PrintData("Заданным индексам элемента массива соответствует значение: " + element);
 
 // Метод читает данные от пользователя
 int ReadData(string line)
